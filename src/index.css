@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f0f9ff;
+  --color-brand-100: #e0f2fe;
+  --color-brand-400: #38bdf8;
+  --color-brand-500: #0ea5e9;
+  --color-brand-600: #0284c7;
+  --color-navy-900: #0f172a;
+  --color-navy-950: #07111f;
+  --font-sans: "Inter", "Avenir Next", "Segoe UI", Arial, sans-serif;
+  --shadow-card: 0 18px 46px -28px rgba(15, 23, 42, 0.35);
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #0f172a;
+  background-color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  background: #bae6fd;
+  color: #0f172a;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24;
+}
+
+.section-label {
+  @apply mb-3 inline-flex items-center rounded-full border border-brand-100 bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-600;
+}
+
+.section-title {
+  @apply max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl;
+}
+
+.section-description {
+  @apply mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500;
+}

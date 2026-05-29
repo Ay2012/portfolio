@@ -1,0 +1,2 @@
+Replace this file with Ayush-Gaur-Resume.pdf and update src/data/links.ts before deploying.
+
